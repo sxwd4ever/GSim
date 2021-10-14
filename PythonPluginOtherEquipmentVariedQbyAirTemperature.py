@@ -56,7 +56,7 @@
 from pyenergyplus.plugin import EnergyPlusPlugin
 
 
-class RH_OpeningController(EnergyPlusPlugin):
+class PowerLevel_Controller(EnergyPlusPlugin):
 
     def __init__(self):
         super().__init__()
@@ -91,9 +91,9 @@ class RH_OpeningController(EnergyPlusPlugin):
             self.api.runtime.issue_severe(state, "Other Equipment Power Level can not be found")
             return 1
 
-        zone_rh = self.api.exchange.get_variable_value(state, self.ZoneTemp_handle)
+        zone_temp = self.api.exchange.get_variable_value(state, self.ZoneTemp_handle)
 
-        if zone_rh < 22:
+        if zone_temp < 22:
             self.api.exchange.set_actuator_value(state, self.PowLevel_handle, 0.0)
         else: 
             self.api.exchange.set_actuator_value(state, self.PowLevel_handle, 1300.0)

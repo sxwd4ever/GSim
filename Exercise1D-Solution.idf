@@ -14,7 +14,7 @@ PythonPlugin:Instance,
     PythonOtherEquipment,    !- Name
     No,                      !- Run During Warmup Days
     PythonPluginOtherEquipmentVariedQbyAirTemperature,  !- Python Module Name
-    RH_OpeningController;    !- Plugin Class Name
+    PowerLevel_Controller;   !- Plugin Class Name
 
 OtherEquipment,
     TestOtherEquipment,      !- Name
