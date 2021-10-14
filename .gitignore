@@ -1,0 +1,19 @@
+# intermediate files or E+ generated outputs
+*.audit
+*.bnd
+*.csv
+*.dxf
+*.eio
+*.err
+*.eso
+*.mdd
+*.mtd
+*.mtr
+*.rdd
+*.rvaudit
+*.shd
+*.html
+
+# Python Plugin cache folder
+__pycache__
+
