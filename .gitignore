@@ -13,6 +13,8 @@
 *.rvaudit
 *.shd
 *.html
+*.htm
+*.dbg
 
 # Python Plugin cache folder
 __pycache__
